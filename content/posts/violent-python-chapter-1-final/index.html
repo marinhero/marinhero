@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="http://example.org/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="http://example.org/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg" color="">
+
+  <meta name="msapplication-TileColor" content="">
+
+  <meta name="theme-color" content="">
+
+  
+  <link rel="stylesheet" href="http://example.org/css/bootstrap.min.css" />
+
+  
+  <title>Violent Python Chapter #1 Final | Marin Alcaraz</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255,255,255,.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255,255,255,1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h1>Violent Python Chapter #1 Final</h1>
+<p>And that&rsquo;s all for the chapter #1! The last exercise was fun as well. It is a Zip file cracker.</p>
+
+<pre><code>&lt;code&gt;
+# Violent Python
+# Chapter #1
+# Exercise #3 Zip file cracker
+# By: Marin Alcaraz
+
+import zipfile
+import sys
+
+
+def decrypt_file(filename):
+    zFile = zipfile.ZipFile(filename)
+    dict_file = open(&quot;dict.txt&quot;, 'r')
+    print &quot;[*] Decrypting file...&quot;
+    for line in dict_file.readlines():
+        password = line.strip('\n')
+        try:
+            zFile.extractall(pwd=password)
+            return password
+        except Exception, e:
+            pass
+
+def main():
+
+    if (len(sys.argv) == 2):
+        filename = sys.argv[1]
+        p = decrypt_file(filename)
+        if p:
+            print &quot;[+] Password[&quot; + p + &quot;]&quot;
+    else:
+        print &quot;Usage: python py-pass.py file.zip&quot;
+        exit(0)
+
+if __name__ == '__main__':
+    main()
+&lt;/code&gt;
+</code></pre>
+
+    </article>
+  </div>
+
+  
+  
+  
+
+  
+
+  
+</body>
+
+</html>

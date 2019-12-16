@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="http://example.org/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="http://example.org/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg" color="">
+
+  <meta name="msapplication-TileColor" content="">
+
+  <meta name="theme-color" content="">
+
+  
+  <link rel="stylesheet" href="http://example.org/css/bootstrap.min.css" />
+
+  
+  <title>Connect to Airport Extreme Shared Disk from Linux | Marin Alcaraz</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255,255,255,.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255,255,255,1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h1>Connect to Airport Extreme Shared Disk from Linux</h1>
+<p>Recently I bought an Apple Airport Extreme to improve WiFi connectivity at home, I&rsquo;m very happy with the results!</p>
+
+<p>Airport Extreme allows you to share a hard drive over the network, since one of my computers runs Linux I decided to modify my fstab to auto mount the sared drive into the Linux box.</p>
+
+<p>Check it out:</p>
+
+<pre><code>sudo mkdir /media/airport
+sudo vim /etc/fstab
+</code></pre>
+
+<p>Add the following information at the end of that file (<em>in one line</em>):</p>
+
+<pre><code>//YOUR.AIPORT.IP.ADDR/YOURAIRPORTWORKDIR 
+/media/airport/ cifs auto,
+iocharset=utf8,nobrl,username=AirportUsername,
+password=AirportPass,
+_netdev,uid=LinuxUser,gid=LinuxGroup
+</code></pre>
+
+<p>And then auto mount your new fstab entry using:</p>
+
+<pre><code>marin@Corsair$&gt; sudo mount -a
+</code></pre>
+
+<p>That&rsquo;s all!</p>
+
+    </article>
+  </div>
+
+  
+  
+  
+
+  
+
+  
+</body>
+
+</html>
