@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marinhero.com/tags/computer-architecture/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <loc>https://marinhero.com/tags/bash/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marinhero.com/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marinhero.com/posts/bash-history/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marinhero.com/posts/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marinhero.com/tags/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marinhero.com/tags/computer-architecture/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
