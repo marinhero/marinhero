@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>tooling</title>
+      <link>https://marinhero.com/tags/tooling/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marinhero.com/tags/tooling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Computer Architecture</title>
       <link>https://marinhero.com/tags/computer-architecture/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
@@ -26,7 +35,7 @@
     </item>
     
     <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>https://marinhero.com/tags/golang/</link>
       <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -35,11 +44,11 @@
     </item>
     
     <item>
-      <title>InfoSec</title>
-      <link>https://marinhero.com/tags/infosec/</link>
+      <title>Information-Security</title>
+      <link>https://marinhero.com/tags/information-security/</link>
       <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marinhero.com/tags/infosec/</guid>
+      <guid>https://marinhero.com/tags/information-security/</guid>
       <description></description>
     </item>
     
