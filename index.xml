@@ -37,5 +37,17 @@ These are some of the questions that come to my mind.
 In April 2017, The Shadow Brokers leaked an exploit developed by the NSA named EternalBlue.</description>
     </item>
     
+    <item>
+      <title>About me</title>
+      <link>https://marinhero.com/pages/marin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://marinhero.com/pages/marin/</guid>
+      <description>Hello! I&amp;rsquo;m Marín Alcaraz. Right now, I work as a Full Stack Engineer for Wootric.
+I studied Computer Systems Engineering at the ITESM with a brief, but awesome stint at EPITECH.
+After, college I went to the Recurse Center and had the best time of my life building cool software projects, like a Dropbox clone or my own ad-blocker. I&amp;rsquo;m passionate about Infrastructure, Information Security, Ruby, and TypeScript.
+When I&amp;rsquo;m away from my keyboard you can find me singing, dancing Rueda de Casino, or riding my bike.</description>
+    </item>
+    
   </channel>
 </rss>
